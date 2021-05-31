@@ -1,11 +1,11 @@
-ENVT0100,LM:2021/05/31 00:53:37:100,DS:0000007716,CS:04715,MA:FC-01-7C-36-45-86,EI:           
+ENVT0100,LM:2021/05/31 13:41:33:139,DS:0000007717,CS:08993,MA:FC-01-7C-36-45-86,EI:           
 SystemProperties {
 	sRCVersion="7.4.8"
 	sRCRevision=""
 	sGUID="f5fbd53b-482a-44bd-adf0-561c68a75f7d"
 	sPath="C:\\EpsonRC70\\Projects\\KMAK_Bolt\\"
 	sCreated="6/16/2020 4:46:10 PM"
-	sLastModified="5/30/2021 8:53:27 PM"
+	sLastModified="5/31/2021 9:41:25 AM"
 	bBuildComplete=False
 	bFirstBuildComplete=True
 	bRebuildRequired=False
@@ -41,7 +41,7 @@ nRobotCount=1
 nProgramFileCount=1
 ProgramFile1 {
 	sName="Main_Assy.prg"
-	bCompiled=True
+	bCompiled=False
 	bStoreInController=True
 	sTimeSavedInController="5/31/2021 12:38:14 AM"
 }

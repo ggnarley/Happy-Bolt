@@ -1,4 +1,4 @@
-ENVT0100,LM:2021/05/30 23:27:33:296,DS:0000032867,CS:30255,MA:FC-01-7C-36-45-86,EI:           
+ENVT0100,LM:2021/05/30 23:31:45:428,DS:0000032867,CS:30511,MA:FC-01-7C-36-45-86,EI:           
 sRCVersion="7.4.8"
 sGUID="f5fbd53b-482a-44bd-adf0-561c68a75f7d"
 nCameraNumber=1
@@ -843,7 +843,7 @@ Sequence4 {
 		nModelWinType=3
 		nModelWinWidth=174
 		sName="Geom03"
-		nNumberToFind=0
+		nNumberToFind=1
 		sPassColor="LightGreen"
 		nPassType=1
 		bRejectOnEdge=False
