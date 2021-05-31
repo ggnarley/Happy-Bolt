@@ -236,7 +236,6 @@ Function PickUpBolt()
 	BPU = UCalcBolt
 	
 	'Print "BP_: ", BPX, BPY, BPU
-	'SpeedS = 400
 	Jump PassThruLow :U(BPU) LimZ -90 CP ! D50; On Gripper; !
 
 	Jump XY(BPX, BPY, BOLT_PICKUP_Z_HEIGHT, BPU) /L C0 LimZ BOLT_PICKUP_Z_LIMIT ! D99; Off Gripper; !
@@ -291,17 +290,14 @@ Fend
 '''''''''''''''''''''''''''''''''''''''''''''''''''''
 Function MarryBolt()
 	Print "Marry Bolt"
-	'Jump AboveNest C0 LimZ -24 CP
 	Go AboveNest 'CP
 	Go BottomNest
-	'Go AboveLrgNest4Bolt CP
 Fend
 			
 ''''''''''''''''''''''' reset counters for next cycle ''''	
 '''''''''''''''''''''''''''''''''''''''''''''''''''''
 Function ResetCounters()
 	If cycles_completed = 0 Then
-		'Print "Bolt Count: ", g_Good_Bolt_Cnt, Tmr(0)
 		cycles_completed = 1
 		Call FirstLoopOk()
 	EndIf
@@ -414,7 +410,6 @@ Function FirstLoopOk
   String msg$, title$
   Integer mFlags, answer
   
-  'msg$ = Chr$(34) + "Operation complete" + Chr$(34) + CRLF
   msg$ = "First Run Good?" + CRLF
   msg$ = msg$ + "Ready to continue?"
   title$ = "Sample Application"
