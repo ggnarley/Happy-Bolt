@@ -1,8 +1,10 @@
-ENVT0100,LM:2021/05/31 03:22:44:493,DS:0000003706,CS:31257,MA:FC-01-7C-36-45-86,EI:           
+ENVT0100,LM:2021/05/31 13:41:33:155,DS:0000003787,CS:00532,MA:FC-01-7C-36-45-86,EI:           
+sActiveChild="Vision Guide - Offline - 2560 x 1920 - [test]"
+bMdiMaximized=False
 nProgramFileCount=1
 ProgramFile1 {
 	sName="Main_Assy.prg"
-	bOpened=False
+	bOpened=True
 	nWinState=0
 	Window {
 		nLeft=-7
@@ -204,7 +206,7 @@ UserErrorEditor {
 	nWinState=0
 }
 VisionGuide {
-	bOpened=False
+	bOpened=True
 	Window {
 		nLeft=701
 		nTop=-5
@@ -216,7 +218,7 @@ VisionGuide {
 	nSplitterDistance1=588
 	nSplitterDistance2=487
 	nSplitterDistance3=525
-	nSplitterDistance4=189
+	nSplitterDistance4=185
 	nSplitterDistance5=777
 }
 ForceGuide {

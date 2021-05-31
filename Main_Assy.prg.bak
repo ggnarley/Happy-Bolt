@@ -291,17 +291,14 @@ Fend
 '''''''''''''''''''''''''''''''''''''''''''''''''''''
 Function MarryBolt()
 	Print "Marry Bolt"
-	'Jump AboveNest C0 LimZ -24 CP
 	Go AboveNest 'CP
 	Go BottomNest
-	'Go AboveLrgNest4Bolt CP
 Fend
 			
 ''''''''''''''''''''''' reset counters for next cycle ''''	
 '''''''''''''''''''''''''''''''''''''''''''''''''''''
 Function ResetCounters()
 	If cycles_completed = 0 Then
-		'Print "Bolt Count: ", g_Good_Bolt_Cnt, Tmr(0)
 		cycles_completed = 1
 		Call FirstLoopOk()
 	EndIf
@@ -380,11 +377,12 @@ Function InitRobot
 	EndIf
 	Power High		'Torque
 	Speed ROBOT_SPEED
-	SpeedS 600
+	'SpeedS 600
 	Accel 40, 40  'Accel,Decel
 	
 	 ' jump to start area and open gripper to drop anything
     Jump HomeBase
+    EjectOring()
     Off Gripper
     Wait .5
     On Gripper
@@ -413,7 +411,6 @@ Function FirstLoopOk
   String msg$, title$
   Integer mFlags, answer
   
-  'msg$ = Chr$(34) + "Operation complete" + Chr$(34) + CRLF
   msg$ = "First Run Good?" + CRLF
   msg$ = msg$ + "Ready to continue?"
   title$ = "Sample Application"
@@ -463,41 +460,6 @@ Function VGetBlackBolt As Integer
 		VGetBlackBolt = 1
 		Exit Function
 	EndIf
-	
-'	VGet Find_Black_Bolts.Corr01.NumberFound, NumCorrBoltFound
-'	If NumCorrBoltFound <> 0 Then
-'		VGet Find_Black_Bolts.Corr01.RobotXYU(1), IsCorrBoltFound, BPX, BPY, BPU
-'		VGetBlackBolt = 1
-'		Exit Function
-'	EndIf
-'	
-'	VGet Find_Black_Bolts.Corr02.NumberFound, NumCorrBoltFound
-'	If NumCorrBoltFound <> 0 Then
-'		VGet Find_Black_Bolts.Corr02.RobotXYU(1), IsCorrBoltFound, BPX, BPY, BPU
-'		VGetBlackBolt = 1
-'		Exit Function
-'	EndIf
-'	
-'	VGet Find_Black_Bolts.Corr03.NumberFound, NumCorrBoltFound
-'	If NumCorrBoltFound <> 0 Then
-'		VGet Find_Black_Bolts.Corr03.RobotXYU(1), IsCorrBoltFound, BPX, BPY, BPU
-'		VGetBlackBolt = 1
-'		Exit Function
-'	EndIf
-'	
-'	VGet Find_Black_Bolts.Corr05.NumberFound, NumCorrBoltFound
-'	If NumCorrBoltFound <> 0 Then
-'		VGet Find_Black_Bolts.Corr05.RobotXYU(1), IsCorrBoltFound, BPX, BPY, BPU
-'		VGetBlackBolt = 1
-'		Exit Function
-'	EndIf
-'	
-'	VGet Find_Black_Bolts.Corr04.NumberFound, NumCorrBoltFound
-'	If NumCorrBoltFound <> 0 Then
-'		VGet Find_Black_Bolts.Corr04.RobotXYU(1), IsCorrBoltFound, BPX, BPY, BPU
-'		VGetBlackBolt = 1
-'		Exit Function
-'	EndIf
 Fend
 
 ''''''''''''''''''''''''''''' Vget Large Oring ''''''''''''''''''''''''''''
