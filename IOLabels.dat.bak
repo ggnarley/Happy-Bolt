@@ -1,0 +1,74 @@
+ENVT0100,LM:2021/03/27 20:02:45:043,DS:0000001133,CS:24877,MA:FC-01-7C-36-45-86,EI:           
+sRCVersion="7.4.8"
+InputBitLabels {
+	nNumberOfLabels=2
+	Label1 {
+		nBit=0
+		sLabel="PartInPos"
+		sDescription="Pallet and part is ready for pick"
+	}
+	Label2 {
+		nBit=8
+		sLabel="BlackBoltGood"
+		sDescription=""
+	}
+}
+InputByteLabels {
+	nNumberOfLabels=0
+}
+InputWordLabels {
+	nNumberOfLabels=0
+}
+OutputBitLabels {
+	nNumberOfLabels=7
+	Label1 {
+		nBit=5
+		sLabel="DropOffBad"
+		sDescription=""
+	}
+	Label2 {
+		nBit=6
+		sLabel="OringTrough"
+		sDescription=""
+	}
+	Label3 {
+		nBit=7
+		sLabel="BoltTrough"
+		sDescription=""
+	}
+	Label4 {
+		nBit=8
+		sLabel="Gripper"
+		sDescription=""
+	}
+	Label5 {
+		nBit=9
+		sLabel="DropOff"
+		sDescription=""
+	}
+	Label6 {
+		nBit=10
+		sLabel="OringShaker"
+		sDescription=""
+	}
+	Label7 {
+		nBit=11
+		sLabel="BoltShaker"
+		sDescription=""
+	}
+}
+OutputByteLabels {
+	nNumberOfLabels=0
+}
+OutputWordLabels {
+	nNumberOfLabels=0
+}
+MemoryBitLabels {
+	nNumberOfLabels=0
+}
+MemoryByteLabels {
+	nNumberOfLabels=0
+}
+MemoryWordLabels {
+	nNumberOfLabels=0
+}

@@ -1,0 +1,15 @@
+ENVT0100,LM:2020/12/17 00:58:35:878,DS:0000000283,CS:27980,MA:FC-01-7C-36-45-86,EI:           
+sHelpFile=""
+nStartupForm=0
+nFormCount=1
+Form1 {
+	nHeight=507
+	nLeft=0
+	sName="test"
+	sText="test"
+	nTop=0
+	nWidth=489
+	sClosed="(None)"
+	sLoad="(None)"
+	sResize="(None)"
+}

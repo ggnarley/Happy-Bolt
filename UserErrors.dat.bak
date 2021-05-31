@@ -1,0 +1,18 @@
+ENVT0100,LM:2021/05/22 14:20:16:862,DS:0000000392,CS:16665,MA:FC-01-7C-36-45-86,EI:           
+sRCVersion="7.4.8"
+nNumberOfLabels=3
+Label1 {
+	nError=8000
+	sLabel="OutOfBolts"
+	sMessage="Out of Bolts"
+}
+Label2 {
+	nError=8001
+	sLabel="NoOringsFound"
+	sMessage="No Orings Found"
+}
+Label3 {
+	nError=8002
+	sLabel="MaxBadCycles"
+	sMessage="Maximum number of bad cycles reached"
+}

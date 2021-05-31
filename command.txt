@@ -1,0 +1,56 @@
+
+> On Gripper
+> 
+> 
+> Off Gripper
+> 
+> 
+> On DropOff
+> 
+> Off DropOff
+> 
+> 
+> On DropOffBad; Wait 1; Off DropOffBad
+>
+> 
+> Off BoltShaker; Wait .5; On BoltShaker
+> 
+> On OringEject; Wait .02; Off OringEject
+> 
+> 
+> 
+> 
+> 
+> 
+>
+> 
+> If Sw(8) = 1 Then On Gripper
+> Off OringShaker; Wait .5; On OringShaker
+> 
+> 
+> Off OringTrough; Wait .5; On OringTrough
+> 
+> Off OringTrough
+> 
+> 
+> 
+> On BoltTrough; Wait .25; Off BoltTrough
+> On BoltTrou 
+>
+> Off BoltTrough
+> 
+> 
+> 
+> On BoltShaker; Wait .5; Off BoltShaker
+
+
+
+
+
+
+
+
+
+
+
+
